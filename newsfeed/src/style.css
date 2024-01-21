@@ -205,10 +205,16 @@ body {
   border: none;
   color: #555;
   background-color: white;
+  cursor: pointer;
 }
 
 .likeButton__button:disabled {
   opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.postButton__button {
+  cursor: pointer;
 }
 
 .likeButton__thumb__viewerDoesNotLike {

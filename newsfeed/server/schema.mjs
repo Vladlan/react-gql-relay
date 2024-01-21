@@ -28,8 +28,8 @@ import {
   GraphQLSchema,
   GraphQLString,
   GraphQLInterfaceType,
-  GraphQLDeferDirective,
-  GraphQLStreamDirective,
+  // GraphQLDeferDirective,
+  // GraphQLStreamDirective,
   specifiedDirectives,
 } from "graphql";
 
@@ -307,7 +307,7 @@ export const schema = new GraphQLSchema({
   types: [PersonType, OrganizationType, StoryType],
   directives: [
     ...specifiedDirectives,
-    GraphQLDeferDirective,
-    GraphQLStreamDirective,
+    // GraphQLDeferDirective,
+    // GraphQLStreamDirective,
   ],
 });

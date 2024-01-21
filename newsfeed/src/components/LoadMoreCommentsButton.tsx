@@ -3,11 +3,13 @@ import * as React from "react";
 type Props = {
   onClick: () => void;
   disabled?: boolean;
+  children?: React.ReactNode;
 };
 
 export default function LoadMoreCommentsButton({
   onClick,
   disabled,
+  children,
 }: Props): React.ReactElement {
   return (
     <button
@@ -16,6 +18,7 @@ export default function LoadMoreCommentsButton({
       className="comments__loadMore"
     >
       Load more comments
+      { children }
     </button>
   );
 }
